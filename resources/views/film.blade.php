@@ -36,12 +36,12 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	        </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="ftco-nav">
+          </div>
+          <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="{{url('film')}}" class="nav-link">Film</a></li>
+	          <li class="nav-item active"><a href="{{url('film')}}" class="nav-link">Home</a></li>
 	      </div>
-		  </div>
+		</div>
 	  </nav>
     <!-- END nav -->
 
@@ -60,6 +60,24 @@
           <div class="col-md-12 text-center ftco-animate">
             <h1 class="mt-5" style="background-image: url(crossbody/images/bg_1.jpg);" data-stellar-background-ratio="0.5">Cross<br>Body</h1>
             <h2>173140914111010</h2>
+            <table class="table table-hovered table-striped table-bordered">
+                <tr>
+                    <th>Id Film</th>
+                    <th>Id Kategori</th>
+                    <th>Judul Film</th>
+                    <th>Tahun Rilis</th>
+                    <th>Aksi</th>
+                </tr>
+                @foreach ($datafilm as $row)
+                <tr>
+                    <td>{{ $row->id_film}}</td>
+                    <td>{{ $row->id_kategori}}</td>
+                    <td>{{ $row->judul_film}}</td>
+                    <td>{{ $row->tahun_rilis}}</td>
+                    <td></td>
+                </tr>
+                @endforeach
+            </table>
           </div>
         </div>
       </div>
