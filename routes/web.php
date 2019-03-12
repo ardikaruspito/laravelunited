@@ -29,5 +29,5 @@ Route::resource('film', 'film_controller')->except(['destroy']);
 Route::resource('members', 'members_controller')->except(['destroy']);
 
 Route::get ('master', function() {
-    return view ('layouts.master');
+    return view ('dashboard.laracontent');
 });
