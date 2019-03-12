@@ -20,7 +20,7 @@ class CreateForInstal extends Migration
         Schema::create('film', function (Blueprint $table) {
             $table->increments('id_film');
             $table->integer('id_kategori');
-            $table->String('judul_film');
+            $table->String('judul_film'); 
             $table->integer('tahun_rilis');
         });
     
