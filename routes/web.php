@@ -25,9 +25,20 @@ return "halaman detail kategori" . $id;
 
 });
 
+Route::get('query', 'film_controller@search');
+Route::get('/film/tambah','film_controller@tambah');
+Route::post('/film/store','film_controller@store');
+
+
 Route::resource('film', 'film_controller')->except(['destroy']);
 Route::resource('members', 'members_controller')->except(['destroy']);
 
 Route::get ('master', function() {
     return view ('dashboard.laracontent');
 });
+
+Route::get ('table', function() {
+    return view ('category.index');
+});
+
+
