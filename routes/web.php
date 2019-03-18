@@ -28,6 +28,9 @@ return "halaman detail kategori" . $id;
 Route::get('query', 'film_controller@search');
 Route::get('/film/tambah','film_controller@tambah');
 Route::post('/film/store','film_controller@store');
+Route::get('/film/hapus/{id}','film_controller@hapus');
+Route::get('/film/edit/{id}','film_controller@edit');
+Route::post('/film/update','film_controller@update');
 
 
 Route::resource('film', 'film_controller')->except(['destroy']);
