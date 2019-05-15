@@ -9,3 +9,4 @@ class Film extends Model
     //
     protected $table ="film";
 }
+    

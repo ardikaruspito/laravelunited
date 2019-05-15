@@ -7,7 +7,7 @@ use App\Film;
 use DB;
 use App\Quotation;
 
-class film_controller extends Controller
+class film_controller extends Controller	
 {
     public function index()
     {

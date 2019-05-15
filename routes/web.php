@@ -15,15 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('kategori', function() {
-return "halaman kategori";
-
-});
-
-Route::get('detailkategori/{id}' ,function($id) {
-return "halaman detail kategori" . $id;
-
-});
 
 Route::get('query', 'film_controller@search');
 Route::get('/film/tambah','film_controller@tambah');

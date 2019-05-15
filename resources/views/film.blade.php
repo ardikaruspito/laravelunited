@@ -255,8 +255,7 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+    
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -330,15 +329,12 @@
           <div class="box-header">
               <h3 class="box-title">Responsive Hover Table</h3>
 
-              <form action="{{ url('query') }}" method="GET">
+              <form action="{{ url('query') }}" method="post">
 
 
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="q" class="form-control pull-right" placeholder="Search">
-
-                  <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                
                     </form>
                   </div>
                 </div>
